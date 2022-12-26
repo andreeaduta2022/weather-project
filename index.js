@@ -17,8 +17,12 @@ let dt = document.querySelector("#date-time");
 dt.innerHTML = `${day} ${hours}:${minutes}`;
 function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
+  let humidityTitle=document.querySelector("#humidity-value");
+  let windTitle=document.quesrySelector("#wind-value")
   let showTitle = document.querySelector("#temp-selector");
   showTitle.innerHTML = `${temp}°C`;
+  humidityTitle.innerHTML=response.data.main.humidity;
+  windTitle=response.data.wind.speed;
 }
 function search(event) {
   event.preventDefault();
