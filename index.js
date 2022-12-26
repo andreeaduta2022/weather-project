@@ -26,8 +26,8 @@ function search(event) {
   let city = document.querySelector("#city-search").value;
   let cityTitle = document.querySelector("#city-name");
   cityTitle.innerHTML = `${city}`;
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
-  axios.get(`${url}&appid=${apiKey}`).then(showTemp);
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(showTemp);
 }
 let form = document.querySelector("#form-search");
 form.addEventListener("click", search);
