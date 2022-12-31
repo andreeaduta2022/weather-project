@@ -19,10 +19,12 @@ function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
   let humidityTitle=document.querySelector("#humidity-value");
   let windTitle=document.querySelector("#wind-value")
+  let descriptionTitle=document.querySelector("#weather-description")
   let showTitle = document.querySelector("#temp-selector");
   showTitle.innerHTML = `${temp}°C`;
   humidityTitle.innerHTML=response.data.main.humidity;
   windTitle.innerHTML=response.data.wind.speed;
+  descriptionTitle.innerHTML=response.data.weather[0].description;
 }
 function search(event) {
   event.preventDefault();
