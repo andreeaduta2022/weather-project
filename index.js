@@ -21,10 +21,13 @@ function showTemp(response) {
   let windTitle=document.querySelector("#wind-value")
   let descriptionTitle=document.querySelector("#weather-description")
   let showTitle = document.querySelector("#temp-selector");
+  let iconTitle=document.querySelector("#icon");
   showTitle.innerHTML = `${temp}°C`;
   humidityTitle.innerHTML=response.data.main.humidity;
   windTitle.innerHTML=response.data.wind.speed;
   descriptionTitle.innerHTML=response.data.weather[0].description;
+  iconTitle.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconTitle.setAttribute("alt",response.data.weather[0].description);
 }
 function search(event) {
   event.preventDefault();

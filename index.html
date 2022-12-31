@@ -12,10 +12,8 @@
 </head>
 
 <body>
+    <div class="weather-project">
     <header>
-        <h1>
-            🌤 Weather View
-        </h1>
         <p>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -32,20 +30,21 @@
             </div>
         </div>
         </p>
-        <h2>
+        <h1>
             <spam id="city-name"> your city </spam>
             <div id="date-time">
 
             </div>
+            <spam id="weather-description"></spam>
+            </h1>
+            <h2>
+                <img src="" alt="Clear" id="icon"/>
             <div id="temp-selector">
 
             </div>
         </h2>
         <div class="col-6">
             <ul>
-                <li>
-                    <spam id="weather-description"></spam>
-                </li>
                 <li>
                     Humidity:<spam id="humidity-value"></spam>%
                 </li>
@@ -79,6 +78,7 @@
                     </script>
                 <script src="index.js">
                 </script>
+                </div>
 </body>
 
 </html>
