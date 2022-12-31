@@ -1,17 +1,21 @@
 body {
     font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
 }
-.weather-project {margin:50px 70px;padding:20px; border:1px solid crimson; border-radius: 5px;}
+.card {border:none; margin:10px 20px; background-color: transparent;}
+.weather-project {margin:50px 100px;padding:20px; border:1px solid crimson; border-radius: 5px;
+background-image:url(myweather.jpg);}
 
 h1 {
     text-align: left;
+    font-weight: 100px;
     font-size: 32px;
     line-height: 48px;
     padding-left: 40px;
-    color: #9989da;
+    color: #070f7e;
 }
 
-ul {list-style: none}
+ul {list-style: none;
+color:white; font-weight: 80px;}
 
 .description {
     text-align: center;
@@ -21,6 +25,6 @@ ul {list-style: none}
 }
 .open-source{
     display:block;
-    color:rgb(186, 9, 9);
+    color:#d10916;
     text-decoration: none;
 }
